@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: roboto;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+ul {
+    list-style: none;
+}
+
+select {
+    background-color: black;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 2px;
+}
+
+.header-bg nav a {
+    background-color: #e50914;
+    padding: 0.4rem 0.8rem;
+    border-radius: 2px;
+}
+
+.header-bg {
+    background:linear-gradient( rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0.7)100%),url("./res/assets/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.header-bg nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+
+.header-bg ul {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.header-bg nav div {
+    color: #e50914;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+h1, h3, h4, form {
+    color: white;
+    text-align: center;
+}
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#input-email {
+    width: 30rem;
+    height: 4rem;
+}
+
+#submit {
+    height: 4rem;
+    width: 15rem;
+    font-size: 1.8rem;
+    background-color: #e50914;
+    color: white;
+    border: none;
+}
+
+#submit:hover {
+    background-color: #f30b17;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 15px;
+    }
+
+    #input-email {
+        width: 20rem;
+    }
+}
+
+@media (max-width: 550px) {
+    html {
+        font-size: 10px;
+    }
+
+    #input-email {
+        width: 20rem;
+    }
+}

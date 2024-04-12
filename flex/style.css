@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 1000px;
+    align-content: flex-start;
+}
+
+.items {
+    flex-basis: 300px;
+    height: 100px;
+}
+
+.item1 {
+    background-color: bisque;
+    flex-basis: 50%;
+}
+
+.item2 {
+    background-color: burlywood;
+    flex-basis: 50%;
+}
+
+.item3 {
+    background-color: cadetblue;
+    flex-grow: 1;
+    
+}

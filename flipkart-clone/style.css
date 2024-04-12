@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    background-color: #2874f0;
+    justify-content: center;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+header .search {
+    margin: 0 5rem 0 1.5rem;
+}
+
+header .logo img {
+    width: 9rem;
+}
+
+header .search {
+    background-color: white;
+}
+
+header .search input {
+    width: 33vw;
+    height: 3.5rem;
+    border: none;
+    outline: none;
+    padding-left: 1.5rem;
+}
+
+header .search input:hover {
+    outline: none;
+}
+
+header .search a {
+    width: 3rem;
+}
+
+header .search img {
+    width: 2rem;
+}
+
+header ul {
+    list-style: none;
+    gap: 5rem;
+}
+
+header ul li:first-child a{
+    background-color: white;
+    color: #2874f0;
+    padding: .4rem 4rem;
+}
+ 
+header ul li a{
+     text-decoration: none;
+     color: white;
+     font-size: 1.6rem;
+     font-weight: 500;
+}
+
+header ul li .cart img{
+    margin-right: .5rem;
+}
+
+.category {
+    justify-content: center;
+    gap: 6rem;
+    padding: 1rem 0;
+    background-color: white;
+    margin-top: .5rem;
+}
+
+.category img {
+    width: 6.5rem;
+}
+
+.category-name {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.category .items {
+    text-decoration: none;
+    text-align: center;
+    color: inherit;
+    white-space: nowrap;
+}
+
+.category-name:hover, .category .items:hover{
+    color: #2874f0;
+}
+
+section {
+    margin: 1.5rem .6rem;
+}
+
+.promo {
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.fashion {
+    background-color: white;
+    justify-content: space-around;
+    padding: 2rem 1rem;
+    margin-top: .5rem;
+}
+
+.fashion a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.fashion a:hover img {
+    scale: 1.04;
+}
+
+.fashion .deals {
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.fashion .deals h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.fashion .deals a {
+    color: white;
+    background-color: #2874f0;
+    font-size: 1.3rem;
+    padding: .8rem 1.7rem;
+}
+
+.fashion a div {
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+}
+
+.fashion a div:nth-child(2){
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.fashion a div:nth-child(3) {
+    color: #388e3c;
+    font-size: 1.5rem;
+}
+
+.fashion a div:nth-child(4) {
+    color: #848484;
+}
+
+.promo2 {
+    justify-content: space-between;
+    margin: .5rem 0;
+    gap: 2rem;
+}
+
+.landview img, .axis img, .promo img, .promo2 img{
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1260px) {
+    html {
+        font-size: 9px;
+    }
+
+    .category {
+        gap: 5rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    header {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 1rem;
+        padding: 1rem 1.5rem;
+        white-space: nowrap;
+    }
+
+    header .logo {
+        order: 1;
+    }
+
+    header .search {
+        order: 3;
+        margin: 0;
+        grid-column-start: span 2;
+        
+    }
+
+    header ul {
+        order: 2;
+    }
+
+    header .search input {
+        width: 100%;
+    }
+
+    header ul {
+        justify-self: end;
+    }
+
+    .category {
+        padding: 1rem 2rem;
+        justify-content: flex-start;
+        gap: 4.5rem;
+        overflow-x: scroll;
+    }
+
+    .fashion .deals {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .fashion {
+        justify-content: flex-start;
+        overflow-x: scroll;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    header ul {
+        gap: 4rem;
+    }
+
+    section {
+        margin: 1rem .6rem;
+    }
+
+    .promo, .promo2{
+        flex-direction: column;
+        gap: .5rem;
+        background-color: white;
+    }
+
+    .promo img, .promo2 img{
+        width: 95vw;
+    }
+}
+
+@media (max-width: 550px) {
+    html {
+        font-size: 8px;
+    }
+
+    header .logo img {
+        width: 8rem;
+    }
+
+    header ul li:nth-child(2) {
+        display: none;
+    }
+}
+
+@media (max-width: 360px) {
+    html {
+        font-size: 7px;
+    }
+}

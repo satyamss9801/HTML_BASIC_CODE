@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    background-color: rgba(0, 0, 0, 0.89);
+    margin: 3px 3px auto 3px;
+    border-radius: 13px;
+    padding: 10px;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 78px;
+}
+
+#navbar li {
+    list-style-type: none;
+}
+
+#contact {
+    background-color: rgba(0, 162, 255, 0.548);
+    padding: 3px 17px;
+    border-radius: 50px;
+}
+
+.nav-mid {
+    margin-left: 20px;
+}
+
+#about {
+    margin-right: auto;
+}
+
+.nav-mid a, #contact a {
+    color: rgba(255, 255, 255, 0.856);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#logoflex {
+    margin-right: auto;
+    margin-left: 78px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+@media only screen and (max-width: 600px) {
+    #navbar ul {
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .nav-mid {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    #about {
+        margin-right: 0;
+    }
+
+    #logoflex {
+        margin: auto 0 10px 0;
+    }
+
+    #contact {
+        margin-top: 20px;
+    }
+}
+
+#count {
+    text-align: center;
+    padding-top: 100px;
+}
+
+#ptxt {
+    text-align: center;
+    
+}

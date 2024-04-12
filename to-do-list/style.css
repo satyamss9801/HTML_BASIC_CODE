@@ -1,0 +1,39 @@
+#parent {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    font-size: 22px;
+}
+
+.lItem {
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.lItem:hover {
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+
+input {
+    margin-right: 25px;
+    border-radius: 7px;
+    height: 32px;
+    font-size: larger;
+}
+
+button {
+    font-size: medium;
+    align-self: center;
+}
+
+#parent button:last-child {
+    margin-left: 10px;
+}

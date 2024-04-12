@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+form {
+    display: grid;
+    max-width: 100rem;
+    margin: 2rem auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 4rem;
+    gap: 2rem 4rem;
+}
+
+input {
+    padding: 1rem;
+}
+
+#submit {
+    grid-column: span 2;
+}
+
+@media (max-width: 1200px) {
+    form {
+        max-width: 70vw;
+    }
+}
+
+@media (max-width: 600px) {
+    input {
+        grid-column: span 2;
+    }
+}

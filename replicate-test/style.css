@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    width: 60vw;
+    height: 75vh;
+    position: relative;
+    box-shadow: 0 0 30px;
+    border-radius: 7px;
+}
+
+.wc, .m-sign {
+    width: 30vw;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+}
+
+.wc {
+    background-color: rgb(242, 54, 54);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    color: rgb(225, 225, 225);
+    padding: 0 6rem;
+}
+
+.wc h1, .m-sign h1 {
+    font-size: 4.2rem;
+}
+
+.wc p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.wc a {
+    font-size: 1.4rem;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid rgb(225, 225, 225);
+    padding: .5rem 3.5rem;
+    border-radius: 50px;
+}
+
+.m-sign {
+    background-color: rgb(225, 225, 225);;
+    color: rgb(30, 30, 30);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5rem;
+}
+
+#wc-signin, #m-signin {
+    border-radius: 7px 0 0 7px;
+}
+
+#wc-signup, #m-signup {
+    border-radius: 0 7px 7px 0;
+}
+
+.m-sign p {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+#m-signin a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.icons a {
+    padding: .5rem;
+    border-radius: 50%;
+    border: 0.1px solid gray;
+    display: flex;
+}
+
+.icons a img{
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+form input {
+    height: 4rem;
+    padding-left: 1rem;
+    margin-top: 2rem;
+    background-color: rgb(209, 217, 221);
+    border: none;
+    border-radius: 5px;
+}
+
+form input:first-child {
+    margin-top: .8rem;
+}
+
+.m-sign-btn {
+    align-self: center;
+    text-align: center;
+    padding: 0;
+    margin-top: 1rem;
+    width: 15rem;
+    border-radius: 50px;
+    background-color: rgb(242, 54, 54);
+    color: rgb(225, 225, 225);
+}
+
+.m-sign-btn:hover {
+    cursor: pointer;
+}
+
+.wc a, .m-sign-btn {
+    font-weight: 500;
+}
+
+.to-left {
+    transform: translateX(-100%);
+}
+
+.to-right {
+    transform: translateX(100%);
+}
+
+.to-left-from-mid {
+    transform: translateX(-50%);
+}
+
+.to-right-from-mid {
+    transform: translateX(50%);
+}
+
+.zindex-1 {
+    z-index: 1;
+}
+
+.zindex-2 {
+    z-index: 2;
+}
+
+.parent > * {
+    transition: transform 0.5s;
+}

@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+body {
+    padding: 5vh 8vw;
+}
+
+.container {
+    gap: .5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.items {
+    border: 1px solid rgb(146, 146, 146);
+    position: relative;
+}
+
+.items .photo {
+    padding-top: 2rem;
+}
+
+.items .photo img{
+    display: block;
+    width: 9rem;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+.items .name, .duration{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.items .name {
+    padding: 3rem 2.2rem 6rem 2.2rem;
+}
+
+.duration {
+    background-color: aquamarine;
+    position: absolute;
+    bottom: .5rem;
+    width: 90%;
+    padding: .5rem 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

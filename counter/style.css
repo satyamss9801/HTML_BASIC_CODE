@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+body {
+    padding: 2rem;
+}
+
+.btn-add {
+    padding: .5rem 2rem;
+}
+
+.btn-group button {
+    padding: .2rem;
+}
+
+.container {
+    display: flex;
+    margin-top: 2rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.container .item{
+    border: 2px solid black;
+    text-align: center;
+    height: 100px;
+    width: 200px;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.container .item p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.container .btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    position: absolute;
+    bottom: .5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}

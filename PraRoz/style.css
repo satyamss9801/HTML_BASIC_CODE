@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(65,63,88,1) 1%, rgba(27,27,74,1) 39%, rgba(89,160,181,1) 100%, rgba(0,212,255,1) 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    gap: 4rem;
+    list-style-type: none;
+}
+
+ul li:hover a {
+    color: #c3502d;
+    transition: 0.5s;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.logo {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #c3502d;
+    cursor: pointer;
+    
+}
+
+.search {
+    display: flex;
+}
+
+.search input{
+    height: 2.25rem;
+    border: none;
+}
+
+.search #inp {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding-left: 0.5rem;
+    border: 1px solid #c3502d;
+    background: transparent;
+}
+
+.search #btn {
+    width: 5rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: #c3502d;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+}
+
+.left p {
+    max-width: 50%;
+}
+
+.left input {
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 1rem;
+}
+
+.right div {
+    color: #c3502d;
+    background-color: white;
+    text-align: center;
+    padding: 0.3rem 0;
+    border-radius: 5px;
+}
+
+.right input {
+    margin-top: 1.5rem;
+}

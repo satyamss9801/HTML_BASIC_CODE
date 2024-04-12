@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    letter-spacing: 3px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+#hl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: rgb(42, 42, 42);
+}
+
+#vc {
+    width: 14rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 1.1rem;
+    border-radius: 10px;
+}
+
+#logo {
+    width: 8rem;
+}
+
+#marq {
+    margin-top: 2rem;
+    background-color: bisque;
+    height: 2rem;
+    display: flex;
+    border-radius: 5px;
+}
+
+marquee {
+    margin: auto 25rem auto 25rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(48, 121, 145);
+}
+
+#navbar {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.7rem;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(115, 180, 185);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#navbar li a:hover {
+    background-color: rgb(99, 158, 162);
+}
+
+@media screen and (max-width: 829px) {
+    #vc {
+        display: none;
+    }
+}

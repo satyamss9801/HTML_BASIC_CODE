@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#parent {
+    background-color: red;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    border-radius: 50px;
+}
+
+.child {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+}
+
+#c1 {
+    background-color: aqua;
+    right: 50%;
+    bottom: 50%;
+    border-top-left-radius: 25px;
+}
+
+#c2 {
+    background-color: aquamarine;
+    left: 50%;
+    bottom: 50%;
+    border-top-right-radius: 25px;
+}
+
+#c3 {
+    background-color: bisque;
+    right: 50%;
+    top: 50%;
+    border-bottom-left-radius: 25px;
+}
+
+#c4 {
+    background-color: cadetblue;
+    left: 50%;
+    top: 50%;
+    border-bottom-right-radius: 25px;
+}

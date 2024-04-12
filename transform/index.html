@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            background-color: aqua;
+            width: 250px;
+            height: 250px;
+            margin: 200px auto;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 10px 10px 100px;
+        }
+
+        .rotate {
+            animation-name: rotate;
+            animation-duration: 5s;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotateY(0);
+            }
+
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        Box
+    </div>
+
+    <button onclick="rotate()">Rotate box</button>
+
+    <script>
+        const box = document.querySelector("div")
+
+        function rotate() {
+            box.classList.add("rotate")
+
+            setTimeout(() => {
+                box.classList.remove("rotate")
+            }, 5000);
+        }
+    </script>
+</body>
+
+</html>

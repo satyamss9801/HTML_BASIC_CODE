@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --heading-color: #ffffffed;
+    --content-color: #adb5bdc4;
+    --bootstrap-color: #712cf9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+     background: linear-gradient(to bottom, #3A6073, #16222A);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    font-size: 1.6rem;
+}
+
+header nav {
+    background-color: var(--bootstrap-color);
+    padding: 1.5rem 14rem;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+header nav ul li a{
+    color: #ffffffe7;
+}
+
+header nav .logo-nav, footer .logo-nav {
+    background-color: white;
+    color: var(--bootstrap-color);
+    padding: 0 1rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+header nav .logo-nav:hover {
+    transform: rotate(-5deg) scale(1.1);
+}
+
+header nav .github-icon {
+    margin-left: auto;
+}
+
+header nav .social-icons {
+    font-size: 1.75rem;
+}
+
+main {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+main .new-version {
+    margin-top: 5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+main .new-version div{
+    color: #adb5bda6;
+}
+
+main .new-version span {
+    background-color: #ffe484;
+    color: #212529;
+    font-weight: 600;
+    padding: 0.8rem 1rem;
+    margin-right: .5rem;
+    border-radius: 10px;
+}
+
+main .logo {
+    margin: 2rem 0;
+}
+
+main .logo img{
+    width: 20rem;
+}
+
+main .intro h1 {
+    color: var(--heading-color);
+    font-size: 6rem;
+    max-width: 80rem;
+    margin: 0 auto;
+    line-height: 1;
+}
+
+main .intro p {
+    font-size: 2.3rem;
+    max-width: 80rem;
+    margin: 2rem auto;
+    color: var(--content-color);
+}
+
+main .command-docs {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+main .command-docs .command {
+    background-color: #212529;
+    color: var(--content-color);
+    padding: 2rem 2.5rem;
+    border-radius: 0 0 10px 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .command-docs .docs {
+    background-color: var(--bootstrap-color);
+    color: var(--heading-color);
+    font-weight: 500;
+    font-size: 1.8rem;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+main .version {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--content-color);
+    margin-bottom: 5rem;
+}
+
+main .version a {
+    text-decoration: underline;
+    color: #adb5bda5;
+}
+
+main .version span {
+    font-weight: bold;
+}
+
+.terminal-logo {
+    color: var(--bootstrap-color);
+    font-size: 4rem;
+    display: inline;
+    padding: .75rem 1.3rem;
+    background-color: #702cf91e;
+    border-radius: 15px;
+}
+
+.installation h1 {
+    color: var(--heading-color);
+    font-size: 4.5rem;
+    line-height: 1;
+    max-width: 80rem;
+    margin: 2rem auto;
+}
+
+.installation p {
+    color: var(--content-color);
+    font-size: 2rem;
+    max-width: 80rem;
+    margin: 2rem auto;
+}
+
+.installation-docs {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.installation-docs i {
+    color: #6ea8fe;
+    transition: transform 0.2s;
+}
+
+.installation-docs:hover i {
+    transform: translateX(5px);
+}
+
+.installation-docs p {
+    font-size: 2rem;
+    color: #6ea8fe;
+    font-weight: 500;
+    position: relative;
+}
+
+.installation-docs p::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #6ea8feb6;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+footer {
+    background-color: #2b3035;
+    text-align: center;
+    margin-top: 5rem;
+    padding: 10rem;
+}
+
+footer .container {
+    display: inline-flex;
+    justify-content: center;
+    gap: 10rem;
+    text-align: start;
+}
+
+footer .container .bootstrap-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-basis: 30rem;
+}
+
+footer .container .bootstrap-info a {
+    display: inline-flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+footer .container .bootstrap-info a p {
+    color: var(--heading-color);
+    font-size: 1.9rem;
+}
+
+footer .container .bootstrap-info > p {
+    color: var(--content-color);
+    font-size: 1.3rem;
+}
+
+footer .container .f-links {
+    display: flex;
+    flex-basis: 80rem;
+}
+
+footer .container .f-links > *{
+    flex-basis: 20rem;
+}
+
+footer .container .f-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer .container .f-links ul li:first-child {
+    color: var(--content-color);
+    font-size: 2rem;
+}
+
+footer .container .f-links ul li {
+    padding: 0 1.5rem;
+}
+
+footer .container .f-links ul li a{
+    color: #babfc4e6;
+    font-size: 1.6rem;
+}
+
+@media(max-width: 1050px) {
+    footer .container {
+        flex-direction: column;
+        gap: 3.5rem;
+    }
+
+    footer .container .bootstrap-info {
+        flex-basis: 100%;
+        align-self: center;
+    }
+
+    footer .container .f-links {
+        flex-wrap: wrap;
+        flex-basis: 0;
+        gap: 3rem;
+    }
+
+    footer .container .f-links > *{
+        flex-basis: 25rem;
+    }
+
+    footer .container .f-links ul li {
+        padding: 0;
+    }
+}
+
+@media (max-width: 950px) {
+    header nav {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    html {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 650px) {
+    html {
+        font-size: 7px;
+    }
+
+    main {
+        padding: 0 4rem;
+    }
+}
+
+@media (max-width: 512px) {
+    footer {
+        padding: 10rem 5rem;
+    }
+
+    footer .container .f-links > *{
+        flex-basis: 20rem;
+    }
+}
+
+@media(max-width: 460px) {
+    header nav ul {
+        justify-content: space-evenly;
+    }
+
+    header nav .social-icons {
+        display: none;
+    }
+
+    main .new-version {
+        flex-direction: column;
+        margin: 3rem 0;
+    }
+
+    main .logo {
+        display: none;
+    }
+
+    main .intro h1 {
+        font-size: 4.5rem;
+        max-width: 40rem;
+    }
+
+    main .intro p {
+        font-size: 2rem;
+    }
+
+    main .installation h1 {
+        font-size: 4rem;
+        margin-top: 4rem;
+    }
+
+    main .installation p {
+        max-width: 45rem;
+    }
+
+    main .command-docs {
+        flex-direction: column;
+        margin-bottom: 3.5rem;
+    }
+
+    main .command-docs > * {
+        flex-basis: 8rem;
+        font-size: 2.2rem !important;
+    }
+}
+
+@media (max-width: 370px) {
+    footer .container .f-links > *{
+        flex-basis: 13rem;
+    }
+}

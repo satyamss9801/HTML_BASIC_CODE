@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div id="box1"></div>
+            <div id="box2"></div>
+        </div>
+
+        <div id="btn" onclick="func()">
+            Close Gate
+        </div>
+    </div>
+
+    <script>
+        let isClose = false
+
+        function func() {
+            if (!isClose) {
+                box1.classList.add("close")
+                box2.classList.add("close")
+
+                btn.innerText = "Open Gate"
+                isClose = true
+
+            } else {
+                box1.classList.remove("close")
+                box2.classList.remove("close")
+
+                btn.innerText = "Close Gate"
+                isClose = false
+            }
+        }
+    </script>
+</body>
+
+</html>

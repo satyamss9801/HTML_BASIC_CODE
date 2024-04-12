@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="parent">
+        <div class="wc zindex-2" id="wc-signin">
+            <h1>Welcome Back!</h1>
+            <p>To keep connected with us please login with your personal info</p>
+            <a href="#" onclick="toSignin()">SIGN IN</a>
+        </div>
+
+        <div class="m-sign to-right zindex-1" id="m-signup">
+            <h1>Create Account</h1>
+
+            <div class="icons">
+                <a href="#"><img src="./res/facebook-f.svg" alt=""></a>
+                <a href="#"><img src="./res/google-plus-g.svg" alt=""></a>
+                <a href="#"><img src="./res/linkedin-in.svg" alt=""></a>
+            </div>
+
+            <p>or use your email for registration</p>
+
+            <form action="#">
+                <input type="text" id="name" placeholder="Name">
+                <input type="email" id="email" placeholder="Email">
+                <input type="password" id="password" placeholder="Password">
+
+                <input type="button" value="SIGN UP" class="m-sign-btn">
+            </form>
+        </div>
+
+        <div class="m-sign to-right-from-mid" id="m-signin">
+            <h1>Sign in</h1>
+
+            <div class="icons">
+                <a href="#"><img src="./res/facebook-f.svg" alt=""></a>
+                <a href="#"><img src="./res/google-plus-g.svg" alt=""></a>
+                <a href="#"><img src="./res/linkedin-in.svg" alt=""></a>
+            </div>
+
+            <p>or use your account</p>
+
+            <form action="#">
+                <input type="email" id="email" placeholder="Email">
+                <input type="password" id="password" placeholder="Password">
+
+                <a href="#">Forgot your password?</a>
+
+                <input type="button" value="SIGN IN" class="m-sign-btn">
+            </form>
+        </div>
+
+        <div class="wc to-right-from-mid" id="wc-signup">
+            <h1>Hello, Friend!</h1>
+            <p>Enter your personal details and start journey with us</p>
+            <a href="#" onclick="toSignup()">SIGN UP</a>
+        </div>
+    </div>
+
+    <script>
+        let wcSignin = document.getElementById("wc-signin")
+        let mSignin = document.getElementById("m-signin")
+
+        let mSignup = document.getElementById("m-signup")
+        let wcSignup = document.getElementById("wc-signup")
+
+        function toSignin() {
+            wcSignin.classList.add("to-right-from-mid")
+
+            mSignup.classList.remove("to-right")
+            mSignup.classList.add("to-right-from-mid")
+
+            setTimeout(() => {
+                wcSignin.classList.remove("zindex-2")
+                mSignup.classList.remove("zindex-1")
+
+                wcSignup.classList.add("zindex-2")
+                mSignin.classList.add("zindex-1")
+
+                wcSignup.classList.remove("to-right-from-mid")
+                mSignin.classList.remove("to-right-from-mid")
+
+                wcSignup.classList.add("to-right")
+            }, 250)
+        }
+
+        function toSignup() {
+            mSignin.classList.add("to-right-from-mid")
+
+            wcSignup.classList.remove("to-right")
+            wcSignup.classList.add("to-right-from-mid")
+
+            setTimeout(() => {
+                wcSignup.classList.remove("zindex-2")
+                mSignin.classList.remove("zindex-1")
+
+                wcSignin.classList.add("zindex-2")
+                mSignup.classList.add("zindex-1")
+
+                wcSignin.classList.remove("to-right-from-mid")
+                mSignup.classList.remove("to-right-from-mid")
+
+                mSignup.classList.add("to-right")
+            }, 250);
+        }
+    </script>
+</body>
+
+</html>

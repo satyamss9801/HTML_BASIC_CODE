@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li> <a href="#">Home</a> </li>
+            <li> <a href="#">Store</a></li>
+            <li> <a href="#">Team</a></li>
+        </ul>
+    </nav>
+
+    <div hidden id="cart">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart"
+            viewBox="0 0 16 16">
+            <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+        </svg>
+    </div>
+
+    <div hidden id="cartcnt">
+        <p>0</p>
+    </div>
+
+    <div hidden id="cartitem-parent">
+        <div id="total-label">
+            <p>TOTAL</p>
+            <p>$0.00</p>
+        </div>
+    </div>
+
+    <div id="parentdiv">
+        <div class="rowdiv">
+            <div class="itemdiv">
+                <div style="background-color: red;"></div>
+
+                <div class="itemlabel">
+                    <pre>PRIMARY COLOR</pre>
+                    <p class="colorname">Red</p>
+                    <p class="price">$16.00</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="itemdiv">
+                <div style="background-color: yellow;"></div>
+
+                <div class="itemlabel">
+                    <pre>PRIMARY COLOR</pre>
+                    <p class="colorname">Yellow</p>
+                    <p class="price">$21.00</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="rowdiv">
+            <div class="itemdiv">
+                <div style="background-color: blue;"></div>
+
+                <div class="itemlabel">
+                    <pre>PRIMARY COLOR</pre>
+                    <p class="colorname">Blue</p>
+                    <p class="price">$12.00</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="itemdiv">
+                <div style="background-color: orange;"></div>
+
+                <div class="itemlabel">
+                    <pre>PRIMARY COLOR</pre>
+                    <p class="colorname">Orange</p>
+                    <p class="price">$18.00</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="rowdiv">
+            <div class="itemdiv">
+                <div style="background-color: green;"></div>
+
+                <div class="itemlabel">
+                    <pre>PRIMARY COLOR</pre>
+                    <p class="colorname">Green</p>
+                    <p class="price">$16.00</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="itemdiv">
+                <div style="background-color: violet;"></div>
+
+                <div class="itemlabel">
+                    <pre>PRIMARY COLOR</pre>
+                    <p class="colorname">Violet</p>
+                    <p class="price">$23.00</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

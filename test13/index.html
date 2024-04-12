@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 30px;
+            background-color: aquamarine;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .box::after {
+            content: "";
+            background-color: brown;
+            display: block;
+            height: 3px;
+            width: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            bottom: 0;
+            transition: 0.5s;
+        }
+
+        .box:hover::after {
+            width: 100%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

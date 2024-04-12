@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 0;
+            margin: auto 10px;
+            flex-flow: row wrap;
+        }
+
+        ul li h2 {
+            padding: 0;
+            margin: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: rgb(69, 97, 153);
+            font-size: 1.2rem;
+            display: block;
+        }
+
+        ul li a:hover {
+            color: rgba(69, 97, 153, 0.83);
+        }
+
+        ul li:first-child {
+            margin-right: auto;
+        }
+
+        @media (max-width: 800px) {
+            ul {
+                margin: auto;
+            }
+
+            ul li:first-child {
+                flex-basis: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <h2>Sunny Raj</h2>
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="https://www.github.com/sunnyraj84348" target="_blank"><span
+                        class="fa-brands fa-github"></span></a></li>
+            <li><a href="#"><span class="fa-brands fa-telegram"></span></a></li>
+        </ul>
+    </nav>
+
+    <script src="https://kit.fontawesome.com/e0766acab3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
